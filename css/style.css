@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+h1{
+    background-color: lightseagreen;
+    padding: 1em;
+}
+
+#quiz{
+    background-image: url("../images/bk-ninja.svg");
+    background-size: cover;
+}
+
+#quiz h2{
+    background-color: white;
+    text-align: center;
+}
