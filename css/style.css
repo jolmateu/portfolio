@@ -26,9 +26,9 @@ h1{
     margin: 150px 33%;
     padding: 10px 20px 50px 20px;
     -webkit-box-shadow: 4px 4px 11px 3px rgba(0,0,0,0.3);
-  -moz-box-shadow: 4px 4px 11px 3px rgba(0,0,0,0.3);
-  box-shadow: 4px 4px 11px 3px rgba(0,0,0,0.3);
-  }
+    -moz-box-shadow: 4px 4px 11px 3px rgba(0,0,0,0.3);
+    box-shadow: 4px 4px 11px 3px rgba(0,0,0,0.3);
+}
 
   button {
     color: #ffffff;
@@ -40,6 +40,7 @@ h1{
     width: 100%;
     font-size: 24px;
   }
+
   #question {
    font-size: 24px;
   }
@@ -57,3 +58,9 @@ h1{
     color: #fff;
     background-color: #c00;
   }
+
+  .error{
+    background: #f99;
+    border: #900 1px solid;
+    display: none;
+}
