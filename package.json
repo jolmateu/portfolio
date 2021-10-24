@@ -1,0 +1,23 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio to WDD 330 from BYUI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jolmateu/portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jolmateu/portfolio/issues"
+  },
+  "homepage": "https://github.com/jolmateu/portfolio#readme",
+  "dependencies": {
+    "fs": "^0.0.1-security"
+  }
+}

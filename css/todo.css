@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+	margin: 0;
+	padding: 0px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 2em;
+    padding-right: 2em;
+    text-align: center;
+}
+
+.env {
+	margin: auto;
+	max-width: 800px;
+	width: 60%;
+}
+
+.card{
+    background: lightseagreen;
+	border-top: 20px solid lightslategray;
+	color: #fff;
+	padding: 50px 0;
+	width: 100%;
+}
+
+.card .maintask {
+    color: #212121;
+	text-align: center;
+}
+
+.card .maintask input[type=text]{
+    margin-bottom: 20px;
+	padding: 10px;
+	width: 80%;
+}
+
+.card .maintask input[type=text].error{
+    border: 5px solid #D32F2F;
+	color: red;
+}
+
+.card .maintask #btnNewtask{
+    background: none;
+	border: 1px solid black;
+	color: #fff;
+	display: inline-block;
+	font-size: 16px;
+	padding: 15px;
+}
+
+.card .maintask #btnNewtask:hover {
+    border: 1px solid #fff;
+}
+
+#slist{
+    padding: 10px;
+    
+}
+
+.tasklistd #slist #task{
+    margin-bottom: 15px;
+    
+}
+
+.tasklistd #slist #ltask{
+    border-bottom: 1px solid #B6B6B6;
+    padding: 5px 20px 5px 20px;
+}
+
+.deleteBtn {
+    background-color: #D32F2F;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: white;
+}
+
+footer button {
+    padding: 5px 10px 5px 10px;
+    font-size: 1.1rem;
+    border-style: none;
+}
+
+footer button:hover {
+    background-color: lightslategray;
+}
+
+.all {
+    background-color: rgb(168, 214, 168);
+}
+
+.active {
+    background-color: rgb(105, 204, 171);
+}
+
+.completed {
+    background-color: rgb(96, 187, 214);
+}
+
+

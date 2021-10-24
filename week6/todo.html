@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/todo.css">
+    <title>ToDo List - Jose Mateus - WDD 330 BYUI</title>
+</head>
+<body>
+    <h1>ToDo List</h1>
+    <div class="card">
+        <div class="env">
+            <form class = "maintask">
+                <label for="ntask">New Task:</label><br>
+                <input type="text" id="newtask" name="newtask">
+                <input type="submit" value="Add" id="btnNewtask"><br>
+            </form>
+        </div>
+    </div>
+    <div class="tasklistd">
+        <div class="env">
+            <form id="slist"></form><br>
+            <footer>
+                <button class="all">All</button>
+                <button class="active">Active</button>
+                <button class="completed">Completed</button>
+            </footer>
+        </div>
+    </div>
+</body>
+<script src="../js/todo.js"></script>
+</html>
