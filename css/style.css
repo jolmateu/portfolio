@@ -68,3 +68,73 @@ h1{
 code {
   background-color: lightgreen;
 }
+
+.ad-ad2 h3 span {
+  font-size: 30px;
+  color: #999999;
+  display: inline-block;
+}
+
+.ad-ad2 h3:hover span {
+  color: red;  
+  transform: rotate(10deg) translateX(40px) scale(1.5);
+}
+
+.ad-ad3 h3 {
+  transform: skew(15deg, 4deg);
+}
+
+
+/* .ad-ad4 h3 span {
+  transition-property: transform, color; 
+  transition-duration: 0.2s, 0.1s;  
+  transition-timing-function: ease-out, linear;
+  transition-delay: 50ms;
+} */
+.ad-ad4 h3 span {
+  color: #130269;
+  transition: transform 0.2s ease-out 50ms, color 0.1s linear 50ms;
+}
+
+.ad-ad4 h3:hover span {
+  color: red;
+}
+
+@keyframes bike {
+  0% {
+  background-position: 0 0;
+  }
+  100% {
+  background-position: -360px 0;
+  }
+}
+
+@keyframes move {
+  0% {
+  transform: translateX(-100px);
+  }
+  100% {
+  transform: translateX(100px);
+  }
+}  
+  
+.ad-ad5 h3:after {
+  content: '';
+  width: 90px;
+  height: 92px;
+  background-image: url(../images/bike_sprite.png);
+  display: block;
+  margin: auto;
+  animation: 
+      0.4s steps(4, end) infinite 50ms bike,
+      8s linear infinite 50ms move;
+  animation-play-state: paused;
+}
+
+.ad-ad5 h3:hover:after {
+  animation-play-state: running;
+}
+
+.myCanvas {
+  border: dotted 2px black;
+}
