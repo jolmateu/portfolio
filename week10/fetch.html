@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Fetch - Notes - Jose Mateus - WDD 330 BYUI</title>
+</head>
+<body>
+    <h1 class="main-title">WDD 330 Portfolio</h1>
+    <h2 class="subtitle">Fetch</h2>
+    <h3>Notes</h3>
+    <p>The Fetch API provides a JavaScript interface for accessing and manipulating parts of the HTTP pipeline, such as requests and responses. It also provides a global fetch() method that provides an easy, logical way to fetch resources asynchronously across the network.</p>
+    <ul>
+        <li>The fetch () will return a promise that will be accepted when it receives a response and will only be rejected if there is a network failure or if for some reason the request could not be completed. The most common way to handle promises is by using .then ().</li>
+        <li>The .then () method is passed a callback function where its response parameter is the response object of the request we have made. Inside it we will carry out the logic that we want to do with the response to our request. The fetch (url, options) function is passed as a parameter the url of the request and, optionally, an options object with options from the HTTP request.</li>
+        <li>The first, and most common, is usually to indicate the HTTP method to perform in the request. By default, a GET will be performed, but we can change them to HEAD, POST, PUT or any other type of method. Second, we can indicate objects to send in the body of the request, as well as modify the headers in the headers field.</li>
+        <li>Finally, the credentials field allows you to modify the way in which the request is made. By default, the omit value means that credentials are not included in the request, but it is possible to indicate the same-origin values, which includes the credentials if we are on the same domain, or include that includes the credentials even in requests to other domains.</li>
+    </ul>
+    <script src="main.js"></script>
+</body>
+</html>
