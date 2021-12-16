@@ -40,6 +40,9 @@ function getIngredient(){
                 delBtn.setAttribute('type', 'button');
                 delBtn.setAttribute('id', 'delBtn');
                 delBtn.setAttribute('value', 'Del');
+                calories.setAttribute('id', 'cal');
+                protein.setAttribute('id', 'pro');
+                fat.setAttribute('id', 'fat');
 
                 card.appendChild(h2);
                 card.appendChild(image);

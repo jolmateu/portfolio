@@ -13,6 +13,7 @@ header{
 header img{
     height: 70px;
     padding: 10px;
+    z-index: 5;
 }
 
 .logo-box{
@@ -32,7 +33,7 @@ nav button{
 nav{
     grid-column: 1/4;
     grid-row: 1;
-    background-color: #9bc53d;
+    background-color: white;
     font-family: 'Reem Kufi', sans-serif;
     text-align: right;
 }
@@ -116,36 +117,98 @@ section{
     border-color: white;
 }
 
+main img {
+    width:100%; 
+}
+
+.mission {
+    padding: 10px;
+}
+
 footer {
     display: block;
     text-align: center;
-  }
-
-footer {
-    text-align: center;
+    background-color: #9bc53d;
+    padding: 10px;
+    margin-top: 10px;
   }
 
 .footer-nav {
     display: none;
   }
 
+.footer-nav li a{
+    text-decoration: none;
+}
+
 #content footer {
     margin-left: 0px;
     margin-right: 0px;
     padding-right: 60px;
-  }
+}
+
+footer div ul li{
+    list-style-type: none;
+}
 
 
 @media only screen and (min-width: 550px) {
 
     .cards {
-        display: flex;
+        display: inline-block;
         flex-flow: row wrap;
         margin: 1rem;
+        width: 100%;
     }
 
     .cards section {
-        width: 30%;
+        width: 90%;
+        height: 120px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 0.5fr 0.5fr;
+        grid-template-rows: 30px 60px 30px;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .cards h2{
+        grid-column: 1/2;
+        grid-row: 2;
+    }
+
+    .cards img{
+        height: 80px;
+        width: auto;
+        grid-column: 2 / 3;
+        grid-row: 2;
+    }
+
+    .cards h3{
+        grid-column: 3 / 4;
+    }
+
+    .cards #cal{
+        grid-row: 1;
+    }
+
+    .cards #pro{
+        grid-row: 2;
+    }
+
+    .cards #fat{
+        grid-row: 3;
+    }
+
+    .cards input{
+        grid-row: 2;
+    }
+
+    .cards #addBtn {
+        grid-column: 4 / 5;
+    }
+
+    .cards #delBtn{
+        grid-column: 5 / 6;
     }
 
     nav button {display: none;}
@@ -174,7 +237,7 @@ footer {
     }
 
     header img{
-        height: 120px;
+        height: 80px;
     }
 
     header h1{
@@ -186,6 +249,7 @@ footer {
     nav{
         grid-row: 2;
         text-align: center;
+        background-color: #9bc53d;
     }
 
     .banner-box img {
@@ -253,8 +317,7 @@ footer {
     .footer-nav li a{
         text-decoration: none;
         color: white;
-        
-      }
+    }
       
     .footer-nav ul li.active a{color: #0072bb;}
       
@@ -266,10 +329,10 @@ footer {
 
 @media only screen and (min-width: 1025px) {
 
-    .cards section {
+    /* .cards section {
         width: 24%;
         
-    }
+    } */
 
     #content{
         margin: 0 auto;
@@ -284,7 +347,7 @@ footer {
     }
 
     header img{
-        height: 120px;
+        height: 80px;
     }
 
     nav{
@@ -378,50 +441,7 @@ footer {
         text-align: center;
     }
 
-    .row1{
-        grid-column: 1 / 2;
-        grid-row: 1;
-    }
 
-    .row2{
-        grid-column: 2 / 3;
-        grid-row: 1;
-    }
-
-    .row3{
-        grid-column: 3 / 4;
-        grid-row: 1;
-    }
-
-    .row4{
-        grid-column: 1 / 2;
-        grid-row: 2;
-    }
-
-    .row5{
-        grid-column: 2 / 3;
-        grid-row: 2;
-    }
-
-    .row6{
-        grid-column: 3 / 4;
-        grid-row: 2;
-    }
-
-    .row7{
-        grid-column: 1 / 2;
-        grid-row: 3;
-    }
-
-    .row8{
-        grid-column: 2 / 3;
-        grid-row: 3;
-    }
-
-    .row9{
-        grid-column: 3 / 4;
-        grid-row: 3;
-    }
 
     .main-gallery span{
         display: grid;
